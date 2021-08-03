@@ -31,7 +31,7 @@ function generateNumbers(sValue, eValue) {
     //we want to get all numbers from start to end
     for (let index = sValue; index <= eValue; index++) {
 
-        //this will execute in a lopp until index = eValue
+        //this will execute in a loop until index = eValue
         numbers.push(index);
     }
 
@@ -56,9 +56,12 @@ function displayNumber(numbers) {
             className = "odd";
         }
 
-        templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
+        //Modified for Prism
+        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
+        //Original version that didn't work with Prism
+        //templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
 
     }
 
-    document.getElementById("result").innerHTML = templateRows;
+    document.getElementById("results").innerHTML = templateRows;
 }
