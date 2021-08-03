@@ -4,7 +4,7 @@
 <!--====Head Section Start====-->
 
 <head>
-    <title>App Name: A Coding Project By John Flynn</title>
+    <title>Hundo: A Coding Project By John Flynn</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,8 +21,8 @@
     <!--====Nav Section Start====-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/img/John Flynn Blue Logo.png"
-                    class="d-inline-block align-text-top" width="30" hieght="24">APP NAME</a>
+            <a class="navbar-brand logoFont" href="#"><img src="/img/John Flynn Blue Logo.png"
+                    class="d-inline-block align-text-top" width="30" hieght="24">Hundo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
@@ -51,38 +51,72 @@
     <!--====Nav Section End====-->
     <!--====Main Section Start====-->
     <main class="flex-shrink-0">
-        <div class="container">
-
-
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-4 border-end border-2">
+                    <h1>HUNDO: A Coding Project</h1>
+                    <h4 class="lead">
+                        One loop at a time. A javascript coding exercise using loops. Write a program that displays
+                        number 0 to 100. Displa evend numbers in <storong>BOLD</storong>
+                    </h4>
+                    <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+                    <p>Enter a starting value and a ending value. Press button and the values will appear. </p>
+                </div>
+                <div class="col col-lg-8">
+                    <div>
+                        <h5>Enter Values</h5>
+                        <form class="row gy-2 gx-3">
+                            <div class="col">
+                                <input id="startValue" type="number" class="form-control" placeholder="Start Value"
+                                    value="0" aria-label="Start Value">
+                            </div>
+                            <div class="col">
+                                <input id="endValue" type="number" class="form-control" placeholder="End Value"
+                                    value="100" aria-label="End Value">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the
+                                    Hundo</button>
+                            </div>
+                        </form>
+                        <h2 class="mt-5 border-bottom border-2">Results</h2>
+                        <div class="table-reponsive">
+                            <tbody id="results">
+                                <!--rESULTS Go Here-->
+                            </tbody>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-     <!--====Footer Section Start====-->
-     <footer class="footer mt-auto py-3">
-         <div class="container-fluid">
-             <div class="row row-col-1 row-cols-lg-3 gy-2">
-                 <div class="col order-last order-lg-first text-light">
-                     <div><span class="text-muted">&copy;2021</span> John Flynn |
-                         johnbishopflynn@gmail.com</div>
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                     <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
-                     <div class="row">
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
-     <!--====Footer Section End====-->
+    <!--====Footer Section Start====-->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="row row-col-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first text-light">
+                    <div><span class="text-muted">&copy;2021</span> John Flynn |
+                        johnbishopflynn@gmail.com</div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====Footer Section End====-->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -91,6 +125,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValues);
+    </script>
 
 </body>
 
