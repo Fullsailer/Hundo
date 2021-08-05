@@ -48,7 +48,7 @@ function displayNumber(numbers) {
 
         let className = "even";
 
-        let numbers = numbers[index];
+        let number = numbers[index];
 
         if (number % 2 == 0) {
             className = "even";
@@ -57,9 +57,9 @@ function displayNumber(numbers) {
         }
 
         //Modified for Prism
-        templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
+        //templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
         //Original version that didn't work with Prism
-        //templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
+        templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
 
     }
 
