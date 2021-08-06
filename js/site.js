@@ -4,6 +4,7 @@ function getValues() {
     //get values from the page
     let startValue = document.getElementById("startValue").value;
     let endValue = document.getElementById("endValue").value;
+    
 
     //We need to validate our input
     //parse into Intergers
@@ -59,7 +60,7 @@ function displayNumber(numbers) {
         //Modified for Prism
         //templateRows += `&lt;tr>&lt;td class="${className}" >${number}&lt;/td>&lt;/tr>`;
         //Original version that didn't work with Prism
-        templateRows += `<tr><td class="${className}" >${number}</td></tr>`;
+        templateRows += `<tr><td class="${className}">${number}</td></tr>`;
 
     }
 
